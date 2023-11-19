@@ -396,7 +396,8 @@ p{
     gap: 16px;
     border-radius:4px;
     background-color: var(--IRIS);
-    color: white; 
+    color: white;
+    border: none;
 }
 
 /* Portfolio Tab Style*/
@@ -413,6 +414,7 @@ p{
     align-items: center;
     flex-direction: row;
     gap: 24px;
+    flex-wrap: wrap;
 
 }
 
@@ -448,6 +450,7 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .project-cards img{
@@ -914,12 +917,21 @@ p{
     }
 
     .client-logo{
-        flex-basis: calc(100% /3-30px);
-        width: 768px;
+        flex-basis: calc(100%/3 -30px);
+        width:600px;
+        margin: 0 auto;
+    }
+
+    .client-list{
+        padding-top: 72px;
     }
 
     .menu-toggle{
         display:none
+    }
+
+    .project-cards{
+        flex-basis: calc(100%/2 -30px);
     }
 
 }
