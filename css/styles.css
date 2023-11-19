@@ -347,7 +347,11 @@ p{
 }
 
 .social-icon-div{
-    padding-top: 16px;
+    padding-top:  16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 .social-icon-footer{
     background-color: var(--IRIS);
@@ -378,6 +382,10 @@ p{
     padding: 8px 16px;
     background-color: var(--NAVY-BLUE);
     color: var(--WHITE);
+    border-radius: 4px; 
+    border: 1px solid var(--WHITE, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 .sub-btn{
@@ -879,10 +887,6 @@ p{
         justify-content: center;
         align-items: center;
     }
-
-    .menu-toggle{
-        fill:black;
-    }
 }
 
 
@@ -909,8 +913,9 @@ p{
         display: none;
     }
 
-    .client-logo-box{
+    .client-logo{
         flex-basis: calc(100% /3-30px);
+        width: 768px;
     }
 
     .menu-toggle{
